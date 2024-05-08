@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: aqua;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        background-color: whitesmoke;
+        width: 60vw;
+        padding: 60px;
+        height: 60vh;
+    }
+    .container h1{
+        color: brown;
+        text-align: center;
+    }
+    input{
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 5px;
+
+    }
+    button{
+        margin-left: 40%;
+        padding: 10px;
+        background-color: red;
+    }
+  </style>
+  
+</head>
+<div class="container">
+    <h1>Login Page</h1>
+    <form action="/submit" method="past">
+        <label for ="fname">First Name</label><br>
+        <input type ="text" id="fname" name ="First Name" placeholder="your First Name" required><br>
+        <label for ="lname">Last Name</label><br>
+        <input type ="text" id="lname" name ="Last Name" placeholder="your Last Name" required><br>
+        <label for ="email">Email</label><br>
+        <input type ="text" id="email" name ="Email" placeholder="your Email" required><br>
+        <label for ="pass">Password</label><br>
+        <input type ="password" id="pass" name ="Password" minlength="8" maxlength="16"  placeholder="your Password" required><br>
+        <button>Submit</button>
+    </form>
+</div>
+<body>
+    
+</body>
+</html>
